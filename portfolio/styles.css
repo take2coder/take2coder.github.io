@@ -103,7 +103,7 @@ div.project-tile {
     grid-gap: 15% 8%;
     justify-content: center;
     align-content: center;
-    padding: 4em 0 15em 0; }
+    padding: 1em 0 15em 0; }
  
 .hover {
     height: 375px;
