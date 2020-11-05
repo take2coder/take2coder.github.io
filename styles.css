@@ -1,0 +1,233 @@
+/*******
+  Style sheet for Take2Coder Portfolio
+    Author: Take2Coder
+*******/
+
+/*******  GENERAL STYLES  *******/
+html, body, #navbar, #welcome, #projects, #contact, footer { 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    color: #fff;
+    background-color: #000;
+    display: inline-block; }   
+
+h1 {
+    font-family: 'Commissioner', sans-serif;
+    font-size: 3.5em;
+    padding: .55em 0em .5em 4.25em;
+    color: #fff; 
+    text-shadow: 0.25px 0.25px 0.5px #252525; }
+
+p {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.25em;
+    font-weight: normal;
+    line-height: 1.3em;
+    padding: 0em 12em;
+    color: #fff; }
+
+a { 
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px dashed #cc007a; }
+
+a:hover {
+    text-decoration: none;
+    color:#cc007a; }      
+
+
+/*******  NAVBAR  *******/
+#navbar {
+    background-color: #000;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1em;
+    position: fixed;
+    top: 0;  }
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding-right: 5em;
+    margin: 0; } 
+
+li { 
+    padding: 2em 2em 1.4em 2em;
+    color: #fff; 
+    text-shadow: 0.25px 0.25px 0.5px #252525; }
+    
+a.nav-link { color: #fff; border: 0;}
+
+a.nav-link:hover {
+    color:#cc007a;
+    padding-bottom: 1em; 
+    border-bottom: 3px solid #cc007a;
+    font-weight: bold; }
+
+
+/*******  WELCOME SECTION  *******/
+#welcome-section {
+    height: 100vh;
+    background-image: url(images/portfolio_hero_img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; }
+
+.welcome {padding: 3em 2.5em 0 4.25em; }
+    
+a.contactbox1, a.contactbox2 {
+    font-size: 80% ;
+    padding: .5em 1.5em;
+    margin-right: 1em;
+    border: 0;
+    border-radius: 0.5em;
+    text-shadow: 0.25px 0.25px 0.5px #252525; }
+
+a.contactbox1 { background-color: #cc007a; }
+a.contactbox2 { background-color: #252525; }
+
+a.contactbox1:hover, a.contactbox2:hover {
+    background-color:#363636;
+    color: #fff;
+    font-weight: normal; }
+ 
+    
+/*******  PROJECTS SECTION  *******/
+#projects { background-color: #252525; }
+    
+div.project-tile {
+    display: grid;
+    grid-template: 375px 375px / 425px 425px;
+    grid-gap: 15% 8%;
+    justify-content: center;
+    align-content: center;
+    padding: 4em 0 15em 0; }
+ 
+.hover {
+    height: 325px;
+    width: 425px;
+    opacity: .75; }
+
+.hover:hover { opacity: 1; }
+    
+p.project-tiles {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.25em;
+    font-weight: normal;
+    line-height: 1em;
+    padding: 0em 1em;
+    color: #fff; }
+
+a.project-link { 
+    text-decoration: none;
+    color: #fff; 
+    border: 0; 
+    padding-left: .25em; }
+        
+a.project-link:hover {
+    text-decoration: none;
+    color:#cc007a;
+    padding-bottom: 1em; }
+
+
+/*******  CONTACTS SECTION  *******/
+#contact { 
+    background-image: url(images/profilebkg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; }
+
+ul#profile-list {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 10em; } 
+
+li.profile-item { 
+    padding: 2.25em;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 1.85em;
+    color: #fff; 
+    text-shadow: 0.75px 0.75px 1px #000; }
+
+a#profile-link { 
+    text-decoration: none;
+    color:#fff; 
+    border: 0; }
+    
+a#profile-link:hover {
+    text-decoration: none;
+    color:#cc007a;
+    padding-bottom: 1em; }
+
+a.profile-link { 
+        text-decoration: none;
+        color:#fff; 
+        border: 0; }
+        
+a.profile-link:hover {
+        text-decoration: none;
+        color:#cc007a;
+        padding-bottom: 1em; }
+ 
+
+/*******  FOOTER  *******/
+.copy {
+        font-family: 'Hind Siliguri', sans-serif;
+        font-size: 90%;
+        font-weight: 600;
+        padding: 1.5em 0em;
+        color: #636363; 
+        text-align: center; }
+
+
+/*******  MEDIA QUERIES  *******/
+
+/* tablet portrait layout (768px to 959px) */
+@media only screen and (max-width: 959px) { 
+    h1 { padding: 0em 0em .5em 1.5em; }
+    .welcome {padding: 2em 2.5em 0 1.5em; }
+    p {padding: 0em 4.25em; }
+    .project-tile {
+        display: grid;
+        grid-template: 400px / 450px;
+        grid-gap: 9%;
+        justify-content: center;
+        align-content: center;
+        padding: 15em 0  15em 0; }
+    p.project-tiles {font-size: 1.5em;}
+}
+
+/* mobile landscape and portrait layout (767px or less) */
+@media only screen and (max-width: 767px) {
+    .welcome {padding: 4em 0 0 1em; }
+    h1 { padding: 1em 0 .5em 0; font-size: 2.5em; text-align: center; }
+    p { padding: 0em 3.25em;
+        text-align: center;
+        font-size: 1.15em;
+        line-height: 1.15em; }
+    ul {justify-content: center;}
+    div.project-tile {
+        display: grid;
+        grid-template: 375px / 425px;
+        grid-gap: 8%;
+        justify-content: center;
+        align-content: center;
+        padding: 4em 0 25em 0; }
+    a.contactbox1, a.contactbox2 {
+        font-size: 80% ;
+        padding: .25em .5em;
+        border-radius: 0.5em;
+        text-shadow: 0.25px 0.25px 0.5px #252525; }
+    ul#profile-list { flex-direction: column; padding-bottom: 5em; }
+    li.profile-item { text-align: center; padding: 1em 0; }
+ }
+    
+
+
+
+
