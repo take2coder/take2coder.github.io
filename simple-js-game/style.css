@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin:0;
+}
+#game{
+    width: 500px;
+    height: 200px;
+    border-bottom: 4px solid #69a61d;
+    margin: auto;
+    background-color: #fff;
+}
+#character{
+    width: 50px;
+    height: 100px;
+    background-image: url(img/pogostick.JPG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:relative;
+    top: 100px;
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 100px;}
+    30%{top: 25px;}
+    70%{top: 25px;}
+    100%{top: 100px;}
+}
+
+#block{
+    background-color: #49bdef;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 70px;
+    left: 600px;
+    border-radius: 50%;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 400px}
+    100%{left: -20px}
+}
